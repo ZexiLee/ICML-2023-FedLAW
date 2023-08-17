@@ -11,6 +11,9 @@
 **Abstract**: In federated learning (FL), weighted aggregation of local models is conducted to generate a global model, and the aggregation weights are normalized (the sum of weights is 1) and proportional to the local data sizes. In this paper, we revisit the weighted aggregation process and gain new insights into the training dynamics of FL. First, we find that the sum of weights can be smaller than 1, causing _**global weight shrinking**_ effect (analogous to weight decay) and improving generalization. We explore how the optimal shrinking factor is affected by clients' data heterogeneity and local epochs. Second, we dive into the relative aggregation weights among clients to depict the clients' importance. We develop _**client coherence**_ to study the learning dynamics and find a critical point that exists. Before entering the critical point, more coherent clients play more essential roles in generalization. 
 Based on the above insights, we propose an effective method for **Fed**erated Learning with **L**earnable **A**ggregation **W**eights, named **FedLAW**. Extensive experiments verify that our method can improve the generalization of the global model by a large margin on different datasets and models.
 
+![image](https://github.com/ZexiLee/ICML-2023-FedLAW/blob/main/figs/fig5.png)
+
+
 ---
 ## Codebase Overview
 - We implement our proposed FedLAW and the FL baselines (FedAvg, FedDF, FedBE, FedDyn, FedAdam, FedProx, and Server-finetune) into the same framework. We note that:
