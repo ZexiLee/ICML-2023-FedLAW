@@ -34,7 +34,7 @@ Based on the above insights, we propose an effective method for **Fed**erated Le
   Server-finetune: {'server_method': 'finetune', 'client_method': 'local_train'}.
   ```
   
-## Citing this repository
+## Citing This Repository
 
 Please cite our paper if you find this repo useful in your work:
 
