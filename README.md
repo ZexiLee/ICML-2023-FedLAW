@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![arXiv](https://img.shields.io/badge/arXiv-2306.02913-b31b1b.svg)](https://arxiv.org/pdf/2302.10911.pdf)
 
->**This is the official implementation of the ICML 2023 paper "Revisiting Weighted Aggregation in Federated Learning with Neural Networks".**
+>**This is the official implementation of the ICML 2023 paper "[Revisiting Weighted Aggregation in Federated Learning with Neural Networks](https://proceedings.mlr.press/v202/li23s.html)".**
 
 ## Paper Overview
 **TLDR**: We gain insights into the weighted aggregation of federated learning from global weight shrinking and client coherence. We also devise an effective aggregation algorithm FedLAW.
@@ -27,7 +27,7 @@ Based on the above insights, we propose an effective method for **Fed**erated Le
   FedLAW: {'server_method': 'fedlaw', 'client_method': 'local_train'}.
   FedAvg: {'server_method': 'fedavg', 'client_method': 'local_train'}.
   FedDF: {'server_method': 'feddf', 'client_method': 'local_train'}.
-  FedBE: {'server_method': 'fedlbe', 'client_method': 'local_train'}.
+  FedBE: {'server_method': 'fedbe', 'client_method': 'local_train'}.
   FedDyn: {'server_method': 'feddyn', 'client_method': 'feddyn'}.
   FedAdam: {'server_method': 'fedadam', 'client_method': 'local_train'}.
   FedProx: {'server_method': 'fedavg', 'client_method': 'fedprox'}.
